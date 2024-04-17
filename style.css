@@ -1,0 +1,646 @@
+html {
+  background-color: #d4a373;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+header {
+    background-color: #d4a373;
+}
+
+main {
+    background-color: #fefae0;
+}
+
+h3 {
+  font: 40px/100%;
+  color: #d4a373;
+  background-color: #fefae0;
+  text-align: center;
+}
+
+footer {
+    background-color: #d4a373;
+    color: #fefae0;
+    text-align: left;
+    bottom: 0px; /* Располагаем footer внизу страницы */
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 150%;
+    font-weight: 500;
+
+}
+
+footer p {
+  margin: 0 0 5px; /* Уменьшаем расстояние между параграфами */
+}
+footer span {
+  cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #d4a373;
+    height: auto;
+}
+
+.text_logo {
+    text-align: center;
+    font-size: 60px;
+    color: #fefae0;
+    font-weight: 500;
+    font-variant: normal;
+    padding: 10px;
+}
+
+.image_logo {
+    width: auto;
+    /* Установите желаемую ширину картинки */
+    height: 100px;
+    /* Высота будет автоматически рассчитана для сохранения пропорций */
+    border-radius: 50%;
+    /* Замените значение на желаемый радиус скругления */
+    overflow: hidden;
+    border: 2px solid #fefae0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background-color: #d4a373;
+}
+
+.menu {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #fefae0;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #d4a373;
+}
+
+.menu-toggle {
+  display: none; /* Скрыть кнопку меню по умолчанию */
+  border: 2px solid #fefae0;
+  border-radius: 10px; /* Скругление углов кнопок */
+  margin-left: auto;
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #d4a373;
+  text-align: center;
+  color: #fefae0;
+
+}
+
+.menu li {
+  list-style-type: none; /* Убираем стандартные маркеры списка */
+  margin: 5px; /* Отступ между элементами списка */
+}
+
+.menu li a {
+  display: inline-block; /* Растягиваем кнопки на всю ширину текста */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #d4a373; /* Цвет текста ссылок */
+  padding: 5px 10px; /* Поля вокруг текста ссылок */
+  border: 2px solid #d4a373; /* Обводка кнопок */
+  border-radius: 10px; /* Скругление углов кнопок */
+}
+
+
+.container {
+  max-width: 80%; /* Устанавливаем максимальную ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  overflow: hidden; /* Обрезаем содержимое, если оно выходит за пределы контейнера */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.image {
+  flex: 0 0 40%; /* Задаем изображению фиксированную ширину в 50% от ширины родительского контейнера */
+  overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы родительского контейнера */
+  max-width: 100%;
+  position: relative; /*Для стрелок */
+}
+
+.image-slide {
+  margin-top: 30px;
+}
+
+.image img {
+  max-width: 100%; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции картинки */
+}
+
+.slide {
+  display: none; /* Скрываем все слайды по умолчанию */
+}
+
+.slide:first-child {
+  display: block; /* Отображаем первый слайд */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0; /* Центрируем вертикально */
+  width: 5%; /* Фиксированная ширина стрелок */
+  height: auto; /* Автоматическая высота */
+  z-index: 1; /* Стрелки над изображениями */
+  cursor: pointer; /* Изменение курсора при наведении */
+  background-color: rgba(255, 255, 255, 0.2); /* Прозрачный фон */
+  padding: 10px; /* Отступы вокруг стрелок */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black; /* Цвет стрелок */
+}
+
+.prev {
+  left: 0; /* Стрелка "назад" слева */
+}
+
+.next {
+  right: 0; /* Стрелка "вперед" справа */
+}
+  
+/* Меняем цвет при наведении */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.text_main_info {
+  color: #7aa191;
+  line-height: 150%;
+  flex: 0 0 60%; /* Задаем тексту фиксированную ширину в 50% от ширины родительского контейнера */
+  padding: 0px 10px 0px 10px; /* Добавляем отступы вокруг текста */
+  box-sizing: border-box; /* Учитываем отступы внутри элемента */
+}
+
+.name_org {
+  font-size: 40px;
+  line-height: 100%;
+  color: #d4a373;
+  margin: 0px 0px 20px 15px;
+}
+
+.image-about-us {
+    padding: 20px;
+}
+
+.image-3 {
+  flex: 0 0 33%; /* Задаем изображению фиксированную ширину в 50% от ширины родительского контейнера */
+  overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы родительского контейнера */
+  max-width: 100%;
+}
+
+.image-3 img {
+  max-width: 100%; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции картинки */
+  margin: 20px;
+}
+
+.love_final {
+  padding: 20px;
+  font-size: 26px;
+  color: #d4a373;
+  text-align: center;
+  line-height: 150%;
+}
+
+.notification {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.text_shelter {
+  color: #7aa191;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 0px 10px 0px 10px; /* Добавляем отступы вокруг текста */
+  box-sizing: border-box; /* Учитываем отступы внутри элемента */
+}
+
+.filter-cat {
+  flex: 0 0 20%; 
+  overflow: hidden; 
+  max-width: 100%;
+}
+
+.cats-gallery {
+  flex: 0 0 80%;
+  overflow: hidden; 
+  max-width: 100%;
+  justify-content: center; 
+  align-items: center;
+}
+
+.cat-card {
+  flex: 0 1 29%; 
+  overflow: hidden; 
+  max-width: 100%;
+  margin: 5px;
+  border: 5px solid #d4a373;
+  border-radius: 10px;
+}
+
+.cat-card img {
+  display: block; /* Сделаем изображение блочным элементом */
+  margin: auto; /* Автоматически центрируем изображение по горизонтали */
+  max-width: 100%; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции картинки */
+}
+
+.cat-card h4 {
+  color: #d4a373;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  box-sizing: border-box; /* Учитываем отступы внутри элемента */
+}
+
+.cat-card p {
+  color: #7aa191;
+  line-height: 150%;
+  margin-left: 10px;
+  box-sizing: border-box; /* Учитываем отступы внутри элемента */
+}
+
+
+
+
+#slider, #slider-month {
+  width: 80%;
+  margin: 10px auto;
+  height: 10px;
+  /* border: 2px solid #d4a373; */
+}
+
+/* .ui-slider-tick-mark {
+  width: 1px;
+  height: 80%;
+  background-color: #000;
+  position: absolute;
+} */
+
+/* Стили для ползунков */
+.ui-slider-handle {
+  content: "\1F43E";
+  border-radius: 50%;
+  width: 22px !important;
+  height: 22px !important;
+  top: -.35em !important;
+  overflow: hidden; 
+
+}   
+
+
+.ui-slider-handle::before {
+  content: "\1F43E";
+  position: absolute;
+  font-size: 30px;
+  top: 0px;
+  left: -9px;
+  transform: rotate(45deg);
+
+}
+
+
+
+.ui-state-default {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: #fefae0 !important;
+  border: 0px solid #fefae0 !important;
+}
+
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.ui-slider-range {
+   background-color: #f3d8a6; /*rgb(238, 195, 77); */
+}
+
+#year-filter, #month-filter {
+  display: none;
+}
+.age-filter-number {
+  text-align: center;
+}
+.age-filter-number input[type="number"] {
+  font-family: Arial, sans-serif; /* Изменяем шрифт */
+  font-size: 18px; /* Изменяем размер шрифта */
+  width: 20%; /* Изменяем ширину инпутов */
+  height: 20px;
+}
+
+
+/* Стили для модального окна */
+.modal {
+  display: none; /* По умолчанию модальное окно скрыто */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 80%;
+  overflow: auto;
+  border: 1px solid #000;
+}
+
+#modal {
+  background-color: #d4a373;
+  max-height: 80vh; /* Убедитесь, что высота не превышает 80vh */
+  overflow-y: auto; /* Добавьте прокрутку, если содержимое окна больше высоты */
+  max-height: 100%;
+}
+
+#modal-cat-windows {
+  background-color: #fefefe;
+  border: 2px solid #000;
+  color: #fefefe;
+  margin: 20px;
+  padding: 0px;
+}
+
+#modal .container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* .modal-cat {
+  background-color: #fefefe;
+  margin: 0px;
+  padding: 0px;
+}  */
+
+.text-modal {
+  color: #000;
+  margin-left: 0px;
+  padding-left: 0px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.text-modal h4 {
+  color: #000;
+  font-size: 48px;
+}
+
+.image-modal {
+  flex: 1 1 40%; /* Задаем изображению фиксированную ширину в 50% от ширины родительского контейнера */
+  overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы родительского контейнера */
+  position: relative; /*Для стрелок */
+  margin: 10px 0px;
+}
+
+.image-modal img {
+  max-height:70vh; /* Картинка подстраивается под размер контейнера */
+  height: auto; /* Сохраняет пропорции картинки */
+  width: 100%; /* Изображение занимает всю доступную ширину контейнера */
+}
+
+#close-modal {
+  background-color: #fefefe;
+  border: 1px solid #000;
+  border-radius: 20%;
+  font-size: 20px;
+  position: absolute;
+  top: 10px; /* Расстояние от верхнего края */
+  right: 10px; /* Расстояние от правого края */
+}
+
+#close-modal:hover,
+#close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.show-modal-btn {
+  color: #d4a373;
+  border: 2px solid #d4a373;
+  border-radius: 10px;
+  background-color: #fefae0;
+  font-size: 18px;
+  display: inline-block; /* Растягиваем кнопки на всю ширину текста */
+  text-decoration: none;
+  overflow: hidden;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show-modal-btn:hover {
+  color: #fefae0;
+  background-color: #d4a373;
+  cursor: pointer;
+}
+
+
+@keyframes bounceBall {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  10% {
+    transform: translateY(325px) translateX(-30px);
+  }
+
+  25% {
+    transform: translateY(100px) translateX(-60px);
+  }
+  
+  40% {
+    transform: translateY(325px) translateX(-100px);
+  }
+
+  55% {
+    transform: translateY(200px) translateX(-150px);
+  }
+  
+  70% {
+    transform: translateY(325px) translateX(-190px);
+  }
+
+  85% {
+    transform: translateY(300px) translateX(-230px);
+  }
+
+  100% {
+    transform: translateY(325px) translateX(-260px);
+  }
+}
+
+.game-cat {
+  padding: 20px;
+}
+
+.game-cat p {
+  color:#d4a373;
+  padding-left: 40px;
+  font-weight: 600;
+}
+
+.scene {
+  position: relative;
+  width: 450px; /* Ширина сцены */
+  height: 400px; /* Высота сцены */
+  border: 5px solid #d4a373;
+  border-radius: 20px;
+  margin:20px;
+}
+
+.ball {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: none;
+}
+
+.cat-ball {
+  height: 100%;
+}
+
+.ball.active {
+  animation: bounceBall 7s forwards;
+}
+
+
+
+
+
+
+/* Стили для маленьких экранов */
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+
+  .text_logo {
+    font-size: 40px;
+  }
+
+  .menu {
+    font-size: 22px;
+  }
+  
+  .filter-cat {
+    flex: 1 1 30%;
+  }
+
+  .cats-gallery {
+    flex: 1 1 70%;
+  }
+  .cat-card {
+    flex: 1 1 40%;
+  }
+}
+
+/* Стили для маленьких экранов */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+
+  .menu {
+    font-size: 22px;
+  }
+
+  .text_logo {
+    font-size: 32px;
+  }
+
+  .menu-toggle {
+    display: block; /* Показать кнопку меню на маленьких экранах */
+  }
+  .menu {
+      display: none;
+  }
+
+  .menu.active {
+      display: block;
+  }
+
+  .menu li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image, .text_main_info {
+    flex: 1 1 80%;
+    margin-top: 10px;
+  }
+  .image img {
+    max-width: 100%; /* Уменьшаем размер изображения на маленьких экранах */
+  }
+
+  .image-3 {
+    flex: 1 1 80%;
+    margin-top: 10px;
+  }
+
+  .image-3 img {
+    max-width: 100%; /* Уменьшаем размер изображения на маленьких экранах */
+    margin: 10px;
+  }
+  
+  .filter-cat, .cats-gallery {
+    flex: 1 1 80%;
+  }
+
+  .cat-card {
+    flex: 1 1 80%;
+  }
+
+  #modal .container {
+    max-height: 100%;
+  }
+
+  .image-modal img {
+    max-height: 100%;
+    height: auto; /* Сохраняет пропорции картинки */
+    width: 100%; /* Изображение занимает всю доступную ширину контейнера */
+  }
+}

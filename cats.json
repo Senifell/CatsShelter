@@ -1,0 +1,147 @@
+[
+    {
+      "id": 0,
+      "name": "Барсик",
+      "gender": "male",
+      "age": {
+        "years": 2,
+        "months": 6
+      },
+      "birthdate": "2019-07-15",
+      "color": "черный",
+      "coat_type": "короткошерстный",
+      "main_photo": "/cats/cat1.jpg",
+      "photos": ["/cats/cat1_1.jpg", "/cats/cat1_2.jpg", "/cats/cat1_3.jpg", "/cats/cat1_4.jpg"]
+    },
+    {
+      "id": 1,
+      "name": "Мурка",
+      "gender": "female",
+      "age": {
+        "years": 1,
+        "months": 3
+      },
+      "birthdate": "2020-04-28",
+      "color": "рыжий",
+      "coat_type": "длинношерстный",
+      "additional_info": "Обожает спать на солнышке.",
+      "main_photo": "/cats/cat2.jpg",
+      "photos": ["/cats/cat2_1.jpg", "/cats/cat2_2.jpg", "/cats/cat2_3.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Васька",
+      "gender": "male",
+      "age": {
+        "years": 4,
+        "months": 8
+      },
+      "birthdate": "2017-11-10",
+      "color": "серый",
+      "coat_type": "полудлинношерстный",
+      "additional_info": "Любит почесаться о мебель.",
+      "main_photo": "/cats/cat3.jpg",
+      "photos": ["/cats/cat3_1.jpg"]
+    },
+    {
+      "id": 3,
+      "name": "Мишка",
+      "gender": "male",
+      "age": {
+        "years": 3,
+        "months": 2
+      },
+      "birthdate": "2019-12-03",
+      "color": "белый",
+      "coat_type": "короткошерстный",
+      "additional_info": "Очень ласковый и игривый кот.",
+      "main_photo": "/cats/cat4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Кузя",
+      "gender": "male",
+      "age": {
+        "years": 0,
+        "months": 6
+      },
+      "birthdate": "2020-02-18",
+      "color": "пепельный",
+      "coat_type": "длинношерстный",
+      "additional_info": "Любит смотреть телевизор.",
+      "main_photo": "/cats/cat5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Матильда",
+      "gender": "female",
+      "age": {
+        "years": 2,
+        "months": 0
+      },
+      "birthdate": null,
+      "color": "черепаховый",
+      "coat_type": "короткошерстный",
+      "additional_info": "Очень дружелюбная и игривая кошка.",
+      "main_photo": "/cats/cat6.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Рыжик",
+      "gender": "male",
+      "age": {
+        "years": 5,
+        "months": 4
+      },
+      "birthdate": "2016-04-12",
+      "color": "рыжий",
+      "coat_type": "короткошерстный",
+      "additional_info": "Любит лазать по деревьям.",
+      "main_photo": "/cats/cat7.jpg",
+      "photos": ["/cats/cat7_1.jpg", "/cats/cat7_2.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Лола",
+      "gender": "female",
+      "age": {
+        "years": 3,
+        "months": 11
+      },
+      "birthdate": "2018-02-28",
+      "color": "черно-белый",
+      "coat_type": "длинношерстный",
+      "additional_info": "Любит играть с мячиками.",
+      "main_photo": "/cats/cat8.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Том",
+      "gender": "male",
+      "age": {
+        "years": 2,
+        "months": 5
+      },
+      "birthdate": "2021-11-21",
+      "color": "серый",
+      "coat_type": "короткошерстный",
+      "additional_info": "Очень активный и любознательный котенок.",
+      "main_photo": "/cats/cat9.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Алиса",
+      "gender": "female",
+      "age": {
+        "years": 1,
+        "months": 6
+      },
+      "birthdate": "2020-05-15",
+      "color": "черепаховый",
+      "coat_type": "полудлинношерстный",
+      "additional_info": "Обожает играть с шариками.",
+      "main_photo": "/cats/cat10.jpg",
+      "photos": ["/cats/cat10_1.jpg"]
+    }
+  ]
+  
