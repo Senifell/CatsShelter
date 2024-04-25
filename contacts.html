@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display"
     />
     <link href="style.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="map.js"></script> -->
+    <script src="https://api-maps.yandex.ru/v3/?apikey=API_YANDEX_KEY&lang=ru_RU"></script>
+    <script src="mapYandex.js"></script>
+
     <script src="active_menu.js"></script>
     <script src="clicable_copy.js"></script>
     <script src="anim_yarn.js"></script>
@@ -46,10 +53,39 @@
       <div class="divider"></div>
     </header>
     <main>
-      <!-- <div class="scene">
-        <img id="kitten" src="./image/kitten.png" alt="Kitten">
-        <img id="yarn" src="./image/yarn.png" alt="Yarn">
-      </div> -->
+      <section class="container"> 
+        <h3>Контакты</h3>
+        <div class="text_contacts">
+          <p>
+            Дорогие друзья, мы всегда рады вашему визиту!
+            Если вы заинтересованы в помощи нашим пушистым друзьям или просто хотите пообщаться о нашей работе, 
+            свяжитесь с нами по указанным контактам или приходите в гости в рабочее время. Ваши лапки приветствуются!</p>
+        </div>
+        <div class="content">
+          <div class="text_contacts">
+            <p class="text-name">
+              Приют "Любовь на лапках"
+            </p>
+            <p class="clickable">
+              Адрес: <br>
+              <span>Страна Котляндия, г. Лапки, ул. Котляндия</span>
+            </p>
+            <p class="clickable">Телефон: <br>
+              <span>+6 (666) 666-66-66</span></p>
+            <p class="clickable">
+              Email: <br>
+              <span>cats-post-cotlyandia@gmail.com</span>
+            </p>
+            <p>
+              Время работы: <br>
+              Понедельник - Воскресенье: 9:00 - 18:00
+            </p>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+
+      
       <div class="game-cat">
         <p>Поиграй с котёнком! &#128062;</p>
         <div class="scene">
