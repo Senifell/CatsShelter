@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           }
 
-          //console.log(photosContainer.childElementCount);
           if (photosContainer.childElementCount > 1) {
             const aPrev = document.createElement("a");
             aPrev.classList.add("prev");
@@ -137,8 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
             photosContainer.appendChild(aNext);
           }
 
-
-          // console.log(photosContainer.innerHTML);
         }
 
         renderModalCatPhotos(modalCat);

@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
 
-    console.log(slides);
-
     if (n >= slides.length) {
       slideIndex = 0;
     }

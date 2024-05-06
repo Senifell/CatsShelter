@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const POS_X = 37.584884;
   const POX_Y = 55.716317;
+
   initMap();
 
   async function initMap() {

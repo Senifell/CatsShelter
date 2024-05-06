@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://api-maps.yandex.ru/v3/?apikey=<%= API_YANDEX_KEY %>&lang=ru_RU"></script>
+    <script src="mapYandex.js"></script>
+
+    <script src="active_menu.js"></script>
+    <script src="clicable_copy.js"></script>
+    <script src="anim_yarn.js"></script>
+    <title>Приют котов (pet-project)</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <figure>
+          <a href="main.html">
+            <img
+              src="./image/logo_img2.jpg"
+              alt="Логотип с котом"
+              class="image_logo"
+            />
+          </a>
+        </figure>
+        <a href="main.html">
+          <h1 class="text_logo">Любовь на Лапках</h1>
+        </a>
+        <button class="menu-toggle">&#9776;</button>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="shelter.html">О приюте</a></li>
+          <li><a href="adoption.html">Информация об усыновлении</a></li>
+          <li><a href="cats.html">Наши котики</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="divider"></div>
+    </header>
+    <main>
+      <section class="container"> 
+        <h3>Контакты</h3>
+        <div class="text_contacts">
+          <p>
+            Дорогие друзья, мы всегда рады вашему визиту!
+            Если вы заинтересованы в помощи нашим пушистым друзьям или просто хотите пообщаться о нашей работе, 
+            свяжитесь с нами по указанным контактам или приходите в гости в рабочее время. Ваши лапки приветствуются!</p>
+        </div>
+        <div class="content">
+          <div class="text_contacts">
+            <p class="text-name">
+              Приют "Любовь на лапках"
+            </p>
+            <p class="clickable">
+              Адрес: <br>
+              <span>Страна Котляндия, г. Лапки, ул. Котляндия</span>
+            </p>
+            <p class="clickable">Телефон: <br>
+              <span>+6 (666) 666-66-66</span></p>
+            <p class="clickable">
+              Email: <br>
+              <span>cats-post-cotlyandia@gmail.com</span>
+            </p>
+            <p>
+              Время работы: <br>
+              Понедельник - Воскресенье: 9:00 - 18:00
+            </p>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+
+      
+      <div class="game-cat">
+        <p>Поиграй с котёнком! &#128062;</p>
+        <div class="scene">
+          <img src="./image/kitten.png" alt="Котенок" class="cat-ball" />
+          <img src="./image/yarn3.png" alt="Клубок" class="ball" id="ball" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Наши Контакты:</h2>
+      <p class="clickable">
+        🏠 Адрес: <span>Страна Котляндия, г. Лапки, ул. Котляндия</span>
+      </p>
+      <p class="clickable">☎️ Телефон: <span>+6 (666) 666-66-66</span></p>
+      <p class="clickable">
+        📧 Email: <span>cats-post-cotlyandia@gmail.com</span>
+      </p>
+    </footer>
+  </body>
+</html>
